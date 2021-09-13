@@ -10,6 +10,8 @@ Lightning is full of smart optimizations to get the most out of your target’s 
 | Add Header          | `header`      |              |
 | Lightning  class    | `lightnig`    |              |
 | ThunderJS api       | `api`         |              |
+| Lightning State     | `_state`      |              |
+| Set State           | `_setState`   |              |
 
 ## Known Issues
 

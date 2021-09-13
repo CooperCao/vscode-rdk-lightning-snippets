@@ -118,4 +118,27 @@
         ],
         "description": "STR_"
     },
+    "state": {
+        "prefix": "_state",
+        "body": [
+            "static _states() {",
+            "    return [",
+            "        class ${1} extends this {",
+            "          \\$enter(context, args) {",
+            "            ${0}",
+            "          }",
+            "          \\$exit() {}         ",
+            "        },",
+            "    ]",
+            "}"
+        ],
+        "description": "state "
+    },
+    "set state": {
+        "prefix": "_setState",
+        "body": [
+            "this._setState(\"${1}\");"
+        ],
+        "description": "set state "
+    }
 }
