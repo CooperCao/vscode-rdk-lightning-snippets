@@ -1,0 +1,21 @@
+{
+  "name": "vscode-rdk-lightning-snippets",
+  "displayName": "vscode-rdk-lightning-snippets",
+  "description": "RDK Lightning code snippets.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

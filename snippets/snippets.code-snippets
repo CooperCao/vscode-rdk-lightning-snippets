@@ -1,0 +1,121 @@
+{
+    // vscode code-snippets
+    "Skyworthdigital header": {
+        "prefix": ["header", "copyright"],
+        "body": [
+            "/**",
+            " * Copyright $CURRENT_YEAR Skyworthdigital, LLC",
+            " *",
+            " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+            " * you may not use this file except in compliance with the License.",
+            " * You may obtain a copy of the License at",
+            " *",
+            " *      https://www.apache.org/licenses/LICENSE-2.0",
+            " *",
+            " * Unless required by applicable law or agreed to in writing, software",
+            " * distributed under the License is distributed on an \"AS IS\" BASIS,",
+            " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
+            " * See the License for the specific language governing permissions and",
+            " * limitations under the License.",
+            " */",
+            "",
+            "$1",
+        ],
+        "description": "header"
+    },
+    "Lightning class": {
+        "prefix": "lightnig",
+        "body": [
+            "/**",
+            " * Copyright $CURRENT_YEAR Skyworthdigital, LLC",
+            " *",
+            " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+            " * you may not use this file except in compliance with the License.",
+            " * You may obtain a copy of the License at",
+            " *",
+            " *      https://www.apache.org/licenses/LICENSE-2.0",
+            " *",
+            " * Unless required by applicable law or agreed to in writing, software",
+            " * distributed under the License is distributed on an \"AS IS\" BASIS,",
+            " * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
+            " * See the License for the specific language governing permissions and",
+            " * limitations under the License.",
+            " */",
+            "",
+            "import { Lightning } from \"@lightningjs/sdk\";",
+            "import { StringId } from \"@/constants\";",
+            "import { getImage, UiImage } from \"@/shared/UiImage\";",
+            "",
+            "/**",
+            " * @export",
+            " * @class $1",
+            " * @extends Lightning.Component",
+            " * Renders the $1 Component",
+            " */",
+            "export class $1 extends Lightning.Component {",
+            "  static _template() {",
+            "    return {",
+            "        $2",
+            "    };",
+            "  }",
+            "",
+            "  _firstActive() {",
+            "  }",
+            "",
+            "  _active() {",
+            "  }",
+            "",
+            "  _inactive() {",
+            "  }",
+            "",
+            "  _construct() {",
+            "  }",
+            "",
+            "  _init() {",
+            "  }",
+            "",
+            "  _getFocused() {",
+            "      // Override to delegate focus to child components.",
+            "      return this;",
+            "  }",
+            "",
+            "  static _states() {",
+            "    return [];",
+            "  }",
+            "}",
+        ],
+        "description": "Lightning class"
+    },
+    "ThunderJS api": {
+        "scope": "javascript,typescript",
+        "prefix": "api",
+        "body": [
+            "$1(){",
+            "\treturn this._invoke(\"$1\");",
+            "}\n",
+        ],
+        "description": "ThunderJS api"
+    },
+    "i18n": {
+        "prefix": "i18n",
+        "body": [
+            "i18n(StringId$1)"
+        ],
+        "description": "i18n"
+    },
+    "image": {
+        "prefix": ["getImage", "image"],
+        "body": [
+            "getImage(UiImage$1)"
+        ],
+        "description": "get image"
+    },
+    "str": {
+        "prefix": ["str_"],
+        "body": [
+            "\"STR_${1/(.*)/${1:/upcase}/}\":\"${1}\",",
+            "$0"
+        ],
+        "description": "STR_"
+    },
+}
