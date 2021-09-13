@@ -1,6 +1,6 @@
 {
   "name": "vscode-rdk-lightning-snippets",
-  "displayName": "vscode-rdk-lightning-snippets",
+  "displayName": "RDK Lightning Snippets",
   "description": "RDK Lightning code snippets.",
   "version": "0.0.1",
   "license": "MIT",
